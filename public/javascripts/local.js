@@ -1,3 +1,11 @@
 $(function() {
   console.log('ready!');
+
+  $('#btn').click(function() {
+    var data = {
+      msg: $('#msgInput').val(),
+    }
+    console.log('click', data.msg);
+  });
+
 });
