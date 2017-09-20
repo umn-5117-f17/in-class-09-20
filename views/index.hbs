@@ -11,6 +11,25 @@
   <li><a href="https://stackoverflow.com/a/30468173/293087">switch layout</a> (`layout: foo` in handler context)</li>
 </ul>
 
+<p>
+  {{ msg }} and {{{ msg2 }}}
+</p>
+
+{{#each aList}}
+  {{ this.x }}, {{ this.y }}
+  <br>
+{{/each}}
+
+{{#if aBoolean}}
+<h1>yes</h1>
+{{else}}
+<h1>no</h1>
+{{/if}}
+
+{{!-- comment --}}
+
+{{> apartial a="goodbye"}}
+
 <hr>
 <h2>ajax topics:</h2>
 
@@ -25,3 +44,5 @@
   <input type="submit" value="ye old submit button">
   <button type="button" id="btn">ajax!</button>
 </form>
+
+is ok? <div id="isOkDiv">unclear</div>
